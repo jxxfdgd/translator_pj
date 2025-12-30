@@ -158,9 +158,7 @@ def on_press(key):
         caps_pressed = True
         print("caps pressed")
 
-    if ctrl_pressed and shift_pressed and caps_pressed:
-        print("🔥 HOTKEY DETECTED! Starting conversion...")
-        convert_selected_text()
+
 
 
 def on_release(key):
@@ -169,7 +167,9 @@ def on_release(key):
     Reset our modifier flags when keys are released.
     """
     global ctrl_pressed, shift_pressed,caps_pressed
-
+    if ctrl_pressed and shift_pressed and caps_pressed:
+        print("🔥 HOTKEY DETECTED! Starting conversion...")
+        convert_selected_text()
     # Reset Ctrl flag
     if key in (keyboard.Key.ctrl_l, keyboard.Key.ctrl_r, keyboard.Key.ctrl):
         ctrl_pressed = False
