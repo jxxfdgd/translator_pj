@@ -30,12 +30,12 @@ def resource_path(relative_path):
 def mapper(input_text: str) -> str:
     if not input_text: return ""
     output = ''
-    if input_text[0] in en_to_ar:
-        for char in input_text.lower():
-            output += en_to_ar.get(char, char)
-    else:
+    if input_text[0] in ar_to_en:
         for char in input_text:
             output += ar_to_en.get(char, char)
+    else:
+        for char in input_text.lower():
+            output += en_to_ar.get(char, char)
     return output
 
 
