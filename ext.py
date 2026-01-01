@@ -62,7 +62,7 @@ def mapper(input_text: str) -> str:
             output += en_to_ar.get(char, char)
         return output
     else:
-        for char in input_text.lower():
+        for char in input_text:
             output += ar_to_en.get(char, char)
         return output
 
