@@ -5,7 +5,7 @@ Have you ever typed an entire sentence only to realize your keyboard was in the 
 ## 🚀 How to Use
 1. **Download:** Get the `translator_ar1.zip` file.
 2. **Run:** Extract the ZIP and run `translator_ar.exe`.
-3. **The Magic Shortcut:** Highlight your "gibberish" text and press **`Shift + Caps Lock`**.
+3. **The Magic Shortcut:**When you use the **`Shift + Caps Lock`** it highlites and translate your text!**.
 
 ## ✨ Features
 * **Bi-directional:** Converts English characters to Arabic AND Arabic characters back to English.
