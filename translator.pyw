@@ -63,6 +63,8 @@ def convert_selected_text():
         converted_text = mapper(original_text)
 
         pyperclip.copy(converted_text)
+        pyautogui.hotkey('alt', 'shift')
+
         pyautogui.hotkey('ctrl', 'v')
 
     except Exception as e:
